@@ -61,15 +61,24 @@
 }
 
 .accardion-body p{
-    font-size: clamp(11px, calc(var(--text)*1.7),24px);
+    font-size: clamp(11px, calc(var(--text)*.9),24px);
 }
 
 .accardion-body li{
-    font-size: clamp(11px, calc(var(--text)*1.7),24px);
+    font-size: clamp(11px, calc(var(--text)*.8),24px);
 }
 
 .active-title{
     color: rgb(0, 44, 244);
+}
+
+.accordion_ul li svg{
+    font-size: 25px;
+}
+
+.accordion_ul li{
+    display: flex;
+    align-items: center;
 }
 
 

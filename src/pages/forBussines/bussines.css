@@ -32,7 +32,7 @@
 }
 
 .bs_card{
-    padding: 1.5vmin clamp(10px, 2vmin, 30px);
+    padding: 1.7vmin clamp(10px, 2.5vmin, 40px);
     display: flex;
     flex-direction: column;
     justify-content: space-around;

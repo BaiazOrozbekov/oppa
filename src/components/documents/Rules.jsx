@@ -3,7 +3,7 @@
 function Rules() {
     return (
         <div className="wrapper">
-            <div className="section__padding privacy_con">
+            <div className="section__padding privacy_con" id="return-policy">
                 <h2>Платные услуги</h2>
 
                 <ul>

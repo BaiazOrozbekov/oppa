@@ -7,10 +7,13 @@ import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 
 
 
 const Footer = () => {
+    const navigate = useNavigate()
     return (
         <div className="wrapper">
             <div className='oppa__footer section__padding'>
@@ -21,9 +24,9 @@ const Footer = () => {
                 </div>
                 <div className="oppa__footer-links_div">
                     <h4>Документы</h4>
-                    <p><Link to='/privacy-policy'>Политика конфидециальности</Link></p>
-                    <p><Link to='/contract-offer'>Публичная офферта</Link></p>
-                    <p><Link to='/return-policy'>Правила возврата средств</Link></p>
+                    <p><a href='privacy-policy' onClick={() => navigate('/privacy-policy')}>Политика конфидециальности</a></p>
+                    <p><a href='contract-offer' onClick={() => navigate('/contract-offer')}>Публичная офферта</a></p>
+                    <p><a href='return-policy'  onClick={() => navigate('/return-policy')}>Правила возврата средств</a></p>
                 </div>
                 <div className="oppa__footer-links_div">
                     <h4>Для связи</h4>
