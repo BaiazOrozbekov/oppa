@@ -1,0 +1,134 @@
+
+.oppa__possibility{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.oppa__possibility-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.oppa__possibility-content h1{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: clamp(30px,calc(var(--text)*2), 60px);
+    line-height: 50px;
+    margin: 1rem 0;
+}
+
+.row-links{
+    width: 100%;
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row-links a{
+    height: 100%;
+    width: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.row-links .android{
+    background-image: url(../../img/android1.png);
+}
+
+.row-links .ios{
+    background-image: url(../../img/ios1.png);
+}
+
+.oppa__possibility-content p{
+    font-family: var(--font-family);
+    font-size: clamp(16px,calc(var(--text)*.6),30px);
+    line-height: 20px;
+    color: var(--color-text);
+    margin-bottom: 2rem;
+}
+
+.main-img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.main-img img{ 
+    border-radius: 15px;
+    width: 100%;
+    height: 560px;
+    object-fit: cover;
+}
+
+.icons__flex-items{
+    font-family: var(--font-family);
+}
+
+@media screen and (max-width: 610px){
+    .main-img img{
+        display: none;
+    }
+
+    .main-img{
+    width: 100%;
+    height: 560px;
+    background-image: url(../../img/main_img2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+}
+@media screen and (max-width: 750px){
+    .oppa__possibility{
+        flex-direction: column;
+    }
+
+    .oppa__possibility-content h1{
+        line-height: 30px;
+    }
+}
+
+
+.icons {
+    width: 100%;
+    height: clamp(fit-content, 80vmin, 80vmin);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.icons__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5vmin;
+}
+
+.icons__flex-items img {
+    width: 64px;
+    height: 64px;
+}
+
+.icons__flex-items p{
+    font-size: clamp(16px,calc(var(--text)*.8),30px);
+}
+
+.icons__flex-items {
+    display: flex;
+    align-items: center;
+    gap: 3vmin;
+    width: clamp(210px, 27%, 27%);
+    position: relative;
+    overflow: hidden;
+}

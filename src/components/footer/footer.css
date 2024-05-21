@@ -1,0 +1,96 @@
+.oppa__footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-footer);
+}
+
+.oppa__footer-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    width: 100%;
+    text-align: left;
+}
+
+.oppa__footer-links div{
+    width: 250px;
+    margin: 1rem;
+}
+
+.oppa__footer-links_logo{
+    width: 330px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.oppa__footer-links_logo img{
+    width: 120px;
+    height: 40px;
+    margin-bottom: 2rem;
+}
+
+.oppa__footer-links_logo p{
+    font-family: var(--font-family);
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.oppa__footer-links_div{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.oppa__footer-links_div h4{
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 16px;
+    margin-bottom: 2rem;
+    color: rgb(58, 57, 57);
+}
+
+.oppa__footer-links_div p{
+    font-family: var(--font-family);
+    font-size: 15px;
+    line-height: 14px;
+    margin: 1.3rem 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.oppa__footer-links_div p a{
+    color: #000;
+}
+
+.oppa__footer-links_div p svg{
+    width: 20px;
+    height: 20px;
+}
+
+.oppa__footer-copyright{
+    margin-top: 3rem;
+    text-align: center;
+    width: 100%;
+}
+
+.oppa__footer-copyright p{
+    font-family: var(--font-family);
+    font-size: 13px;
+    line-height: 14px;
+    color: #676767;
+}
+
+@media screen and (max-width: 550px){
+    .oppa__footer-links div{
+        margin: 1rem 0;
+    }
+}

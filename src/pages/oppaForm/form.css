@@ -1,0 +1,148 @@
+
+.oppa__possibility_3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1080px;
+}
+
+.oppa__possibility_3-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oppa__possibility_3-image img{
+    width: 100%;
+    border-radius: 15px;    
+}
+
+
+.oppa__possibility_3-content form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5px;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.oppa__possibility_3-content form input{
+    padding: 12px 10px;
+    margin: 0.3rem 0;
+    border-radius: 10px;
+    border: 1px solid rgb(174, 174, 174);
+    font-family: var(--font-family);
+}
+
+.form_p{
+    color: #000 !important;
+    font-size: clamp(16px,calc(var(--text)*.5),30px);
+}
+
+.form_submit{
+    width: 50%;
+    background-color: #000;
+    color: #fff;
+    font-family: var(--font-family);
+    cursor: pointer;
+    font-size: clamp(16px,calc(var(--text)*.5),30px);
+}
+
+.oppa__possibility_3-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: end;
+}
+
+.oppa__possibility_3-image{
+    display: flex;
+    justify-content: start;
+}
+
+.oppa__possibility_3-content_2{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.oppa__possibility_3-content h1{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: clamp(16px,calc(var(--text)*2), 47px);
+    line-height: 50px;
+}
+
+.oppa__possibility_3_reversse{
+    flex-direction: row-reverse;
+}
+
+.about_cloud_1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_cloud-qq{
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    width: 30% !important;
+    -webkit-animation: scale-in-center 2s ease-out both;
+    animation: scale-in-center 2s ease-out both;
+}
+
+
+.oppa__possibility_3-content p{
+    font-family: var(--font-family);
+    font-size: clamp(16px,calc(var(--text)*.5),30px);
+    line-height: 23px;
+    color: rgb(145, 145, 145);
+}
+
+@media screen and (max-width: 750px){
+
+    .about_cloud-qq{
+        left: 0;
+        bottom: -30px;
+    }
+
+    .oppa__possibility_3{
+        flex-direction: column-reverse;
+        
+        margin: 2rem 0;
+    }
+
+    .oppa__possibility_3-content{
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .oppa__possibility_3-image{
+        margin: 1rem 0;
+        justify-content: center;
+    }
+
+    .oppa__possibility_3-content_2{
+        width: 90%;
+    }
+
+    .oppa__possibility_3-image img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 450px){
+
+    .about_cloud-qq{
+        left: 0;
+        bottom: -15px;
+    }
+}

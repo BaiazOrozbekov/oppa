@@ -1,0 +1,8 @@
+.privacy_con{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: clamp(16px,calc(var(--text)*0.7), 30px);
+    font-family: var(--font-family);
+    line-height: 25px;
+}
