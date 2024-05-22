@@ -69,6 +69,9 @@
 
 .oppa__footer-links_div p a{
     color: #000;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .oppa__footer-links_div p svg{

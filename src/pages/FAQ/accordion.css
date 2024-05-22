@@ -34,12 +34,14 @@
     border: none;
     text-align: left;
     cursor: pointer;
+    gap: 5px;
 }
 .accardion-header h4{
     font-size: clamp(13px, calc(var(--text)*1.5),25px);
-    max-width: 90%;
+    max-width: 85%;
     font-weight: 500;
 }
+
 
 .accardion-collapse{
     height: 0;
@@ -73,13 +75,20 @@
 }
 
 .accordion_ul li svg{
+    width: 5%;
     font-size: 25px;
+}
+
+.accordion_ul li p{
+    width: 90%;
 }
 
 .accordion_ul li{
     display: flex;
     align-items: center;
 }
+
+
 
 
 .accardion-arrow{

@@ -3,11 +3,9 @@ import './footer.css'
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
-import { FaFacebook } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
-import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import { IoLogoWhatsapp } from "react-icons/io";
 
 
 
@@ -30,15 +28,14 @@ const Footer = () => {
                 </div>
                 <div className="oppa__footer-links_div">
                     <h4>Для связи</h4>
-                    <p><FaPhoneAlt /> 0552005001</p>
-                    <p><FaLocationDot /> Ошская область, село Таштак</p>
-                    <p><IoMail /> oppa.avto@gmail.com</p>
+                    <p><a href="tel:996552005001"><FaPhoneAlt /> 0552005001</a></p>
+                    <p><a href="https://www.google.com/maps/place/%D0%9E%D1%88%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+%D1%81%D0%B5%D0%BB%D0%BE+%D0%A2%D0%B0%D1%88%D1%82%D0%B0%D0%BA/data=!4m2!3m1!1s0x38bc4a73ccff755d:0xfd343dcb30be4d78?sa=X&ved=1t:242&ictx=111&cshid=1716371916919551"><FaLocationDot /> Ошская область, село Таштак</a></p>
+                    <p><a href="mailto:oppa.avto@gmail.com"><IoMail /> oppa.avto@gmail.com</a></p>
                 </div>
                 <div className="oppa__footer-links_div">
                     <h4>Cоц.Сети</h4>
-                    <p><FaFacebook /> Facebook</p>
-                    <p><AiFillInstagram /> Instagram</p>
-                    <p><FaTwitter /> Twitter</p>
+                    <p><a href='https://www.instagram.com/oppa.kgz/'><AiFillInstagram /> Instagram</a></p>
+                    <p><a href='https://wa.me/+996552005001'><IoLogoWhatsapp /> WhatsApp</a></p>
                 </div>
             </div>
             <div className="oppa__footer-copyright">

@@ -45,7 +45,7 @@ const AccordionItem = ({faqItem, onClick, isOpen}) => {
                         faqItem.li
                         ?
                         <ul className="accordion_ul">
-                            {faqItem.li.map(el => <li key={el}><LuDot /> {el}</li>)}
+                            {faqItem.li.map(el => <li key={el}><LuDot /> <p>{el}</p></li>)}
                         </ul>
                         :
                         null
