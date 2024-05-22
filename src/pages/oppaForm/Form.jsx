@@ -10,9 +10,16 @@ function Form() {
 
     const [name, setName] = useState('')
     const [phone, setPhone] = useState('')
+    const [val, setVal] = useState(false)
 
     const handleSubmit = (e) => {
         e.preventDefault()
+
+        if(name.length === 0 || phone.length === 0){
+            setVal(true)
+            return
+        }
+
         const data = {
             Name: name,
             Phone: phone
@@ -22,6 +29,7 @@ function Form() {
             console.log(res);
             setName('')
             setPhone('')
+            setVal(false)
         })
     }
 
@@ -49,7 +57,8 @@ function Form() {
                             <p className="form_p">Как вас зовут</p>
                             <input type="text" placeholder="Ваше Имя" onChange={e => setName(e.target.value)} value={name}/>
                             <p className="form_p">Ваш номер телефона</p>
-                            <input type="text" placeholder="Ваш номер телефона" onChange={e => setPhone(e.target.value)} value={phone}/>
+                            <input type="number" placeholder="Ваш номер телефона" onChange={e => setPhone(e.target.value)} value={phone}/>
+                            {val ? <h3>Поля не должны быть пустыми!</h3> : null}
                             <input className="form_submit" type="submit" placeholder="Отправить"/>
                         </form>
                     </div>

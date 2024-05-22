@@ -29,6 +29,12 @@
     margin-top: 2rem;
 }
 
+.oppa__possibility_3-content form h3{
+    color: red;
+    font-family: var(--font-family);    
+    font-size: clamp(14px,calc(var(--text)*.5),24px);
+}
+
 .oppa__possibility_3-content form input{
     padding: 12px 10px;
     margin: 0.3rem 0;
