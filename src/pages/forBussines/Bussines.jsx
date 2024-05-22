@@ -24,9 +24,9 @@ function Bussines() {
                         <h3>Standart</h3>
                         <p>Описание тарифа</p>
                         <h2>0 c</h2>
-                        <a href="#">Скачать приложение</a>
+                        <a href="https://onelink.to/3r9ugv">Скачать приложение</a>
                         <div className="bs_line"></div>
-                        <ul>
+                        <ul> 
                             <li><IoIosCheckmarkCircleOutline /> <p>Магазин (марки машин, строй оборудование, шины, диски и аксессуары).</p></li>
                             <li><IoIosCheckmarkCircleOutline /> <p>Не ограниченное количество сервисов</p></li>
                         </ul>
@@ -42,7 +42,7 @@ function Bussines() {
                         <h3>Premium</h3>
                         <p>Описание тарифа</p>
                         <h2>2 000 сом</h2>
-                        <a href="#">Скачать приложение</a>
+                        <a href="https://onelink.to/3r9ugv">Скачать приложение</a>
                         <div className="bs_line"></div>
                         <ul>
                             <li><IoIosCheckmarkCircleOutline /> <p>Не ограниченное количество магазинов.</p></li>
@@ -61,7 +61,7 @@ function Bussines() {
                         <h3>VIP</h3>
                         <p>Описание тарифа</p>
                         <h2>1 000 сом</h2>
-                        <a href="#">Скачать приложение</a>
+                        <a href="https://onelink.to/3r9ugv">Скачать приложение</a>
                         <div className="bs_line"></div>
                         <ul>
                             <li><IoIosCheckmarkCircleOutline /> <p>3 магазина</p></li>
